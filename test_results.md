@@ -86,66 +86,57 @@ Bạn: Tôi ở Hà Nội, muốn đi Phú Quốc 2 đêm, budget 5 triệu. Tư
 
 TravelBuddy đang suy nghĩ...
 
-[10:15:02] INFO — 🤖 Agent đang xử lý (8 messages trong context)...
-[10:15:04] INFO — HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-[10:15:04] INFO — 🔧 Gọi tool: search_flights({'origin': 'Hà Nội', 'destination': 'Phú Quốc'})
-[10:15:04] INFO — 🔧 Gọi tool: search_hotels({'city': 'Phú Quốc', 'max_price_per_night': 2500000})
-[10:15:04] INFO — 🤖 Agent đang xử lý (11 messages trong context)...
-[10:15:13] INFO — HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-[10:15:13] INFO — 💬 Trả lời trực tiếp (không gọi tool)
-TravelBuddy: Mình đã tìm thấy thông tin cho chuyến đi của bạn từ Hà Nội đến Phú Quốc trong 2 đêm với ngân sách 5 triệu:
+[16:25:18] INFO — HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[16:25:18] INFO — 🔧 Gọi tool: search_flights({'origin': 'Hà Nội', 'destination': 'Phú Quốc'})
+[16:25:19] INFO — HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[16:25:19] INFO — 🔧 Gọi tool: search_hotels({'city': 'Phú Quốc', 'max_price_per_night': 1900000})
+[16:25:21] INFO — HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[16:25:21] INFO — 🔧 Gọi tool: calculate_budget({'total_budget': 5000000, 'expenses': 've_may_bay:1100000,khach_san:1600000'})
+[16:25:27] INFO — HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[16:25:27] INFO — 💬 Trả lời trực tiếp 
+TravelBuddy: Dưới đây là thông tin chi tiết cho chuyến đi của bạn từ Hà Nội đến Phú Quốc:
 
-✈️ **Chuyến bay:**
-1. **VietJet Air** | 16:00 → 18:15 | **1.100.000đ** | Hạng: economy
-2. **VietJet Air** | 10:00 → 12:15 | **1.350.000đ** | Hạng: economy
-3. **Vietnam Airlines** | 07:00 → 09:15 | **2.100.000đ** | Hạng: economy
+✈️ **Chuyến bay**: 
+- **Hãng**: VietJet Air
+- **Giờ bay**: 16:00 → 18:15
+- **Giá**: 1.100.000đ (Hạng: economy)
 
-💡 **Chuyến bay rẻ nhất** là của VietJet Air lúc 16:00 với giá **1.100.000đ**.
+🏨 **Khách sạn**: 
+- **Tên**: Sol by Meliá
+- **Số sao**: ⭐⭐⭐⭐
+- **Giá/đêm**: 1.500.000đ
+- **Khu vực**: Bãi Trường
+- **Rating**: 4.2/5
 
-🏨 **Khách sạn tại Phú Quốc (giá ≤ 2.500.000đ/đêm):**
-1. **9Station Hostel** ⭐⭐
-   - 💰 **200.000đ/đêm** | 📍 Dương Đông | ⭐ Rating: 4.5/5
-2. **Sol by Meliá** ⭐⭐⭐⭐
-   - 💰 **1.500.000đ/đêm** | 📍 Bãi Trường | ⭐ Rating: 4.2/5
-3. **Lahana Resort** ⭐⭐⭐
-   - 💰 **800.000đ/đêm** | 📍 Dương Đông | ⭐ Rating: 4.0/5
+💰 **Bảng chi phí**:
+   - Vé máy bay: 1.100.000đ
+   - Khách sạn (2 đêm): 3.000.000đ (1.500.000đ x 2)
+   - **Tổng chi**: 4.100.000đ
+   - **Ngân sách còn lại**: 900.000đ
 
-💰 **Bảng chi phí:**
-- Vé máy bay: **1.100.000đ**
-- Khách sạn (2 đêm tại 9Station Hostel): **400.000đ** (200.000đ/đêm)
-- **Tổng chi:** **1.500.000đ**
-- **Ngân sách còn lại:** **3.500.000đ**
-
-💡 **Gợi ý thêm:** Bạn có thể sử dụng ngân sách còn lại để tham gia các hoạt động vui chơi, ăn uống hoặc khám phá các địa điểm du lịch nổi tiếng tại Phú Quốc như Vinpearl Safari, Dinh Cậu hay các bãi biển tuyệt đẹp.
-
-Nếu bạn cần thêm thông tin hoặc muốn đặt phòng, hãy cho mình biết nhé!
+💡 **Gợi ý thêm**: Bạn còn dư 900.000đ, có thể dùng để thưởng thức ẩm thực địa phương hoặc tham gia các hoạt động vui chơi giải trí tại Phú Quốc. Nếu bạn muốn nâng cấp phòng hoặc tìm thêm lựa chọn khác, hãy cho mình biết nhé!
 ```
-Mình đã tìm thấy thông tin cho chuyến đi của bạn từ Hà Nội đến Phú Quốc trong 2 đêm với ngân sách 5 triệu:
+TravelBuddy: Dưới đây là thông tin chi tiết cho chuyến đi của bạn từ Hà Nội đến Phú Quốc:
 
-✈️ **Chuyến bay:**
-1. **VietJet Air** | 16:00 → 18:15 | **1.100.000đ** | Hạng: economy
-2. **VietJet Air** | 10:00 → 12:15 | **1.350.000đ** | Hạng: economy
-3. **Vietnam Airlines** | 07:00 → 09:15 | **2.100.000đ** | Hạng: economy
+✈️ **Chuyến bay**: 
+- **Hãng**: VietJet Air
+- **Giờ bay**: 16:00 → 18:15
+- **Giá**: 1.100.000đ (Hạng: economy)
 
-💡 **Chuyến bay rẻ nhất** là của VietJet Air lúc 16:00 với giá **1.100.000đ**.
+🏨 **Khách sạn**: 
+- **Tên**: Sol by Meliá
+- **Số sao**: ⭐⭐⭐⭐
+- **Giá/đêm**: 1.500.000đ
+- **Khu vực**: Bãi Trường
+- **Rating**: 4.2/5
 
-🏨 **Khách sạn tại Phú Quốc (giá ≤ 2.500.000đ/đêm):**
-1. **9Station Hostel** ⭐⭐
-   - 💰 **200.000đ/đêm** | 📍 Dương Đông | ⭐ Rating: 4.5/5
-2. **Sol by Meliá** ⭐⭐⭐⭐
-   - 💰 **1.500.000đ/đêm** | 📍 Bãi Trường | ⭐ Rating: 4.2/5
-3. **Lahana Resort** ⭐⭐⭐
-   - 💰 **800.000đ/đêm** | 📍 Dương Đông | ⭐ Rating: 4.0/5
+💰 **Bảng chi phí**:
+   - Vé máy bay: 1.100.000đ
+   - Khách sạn (2 đêm): 3.000.000đ (1.500.000đ x 2)
+   - **Tổng chi**: 4.100.000đ
+   - **Ngân sách còn lại**: 900.000đ
 
-💰 **Bảng chi phí:**
-- Vé máy bay: **1.100.000đ**
-- Khách sạn (2 đêm tại 9Station Hostel): **400.000đ** (200.000đ/đêm)
-- **Tổng chi:** **1.500.000đ**
-- **Ngân sách còn lại:** **3.500.000đ**
-
-💡 **Gợi ý thêm:** Bạn có thể sử dụng ngân sách còn lại để tham gia các hoạt động vui chơi, ăn uống hoặc khám phá các địa điểm du lịch nổi tiếng tại Phú Quốc như Vinpearl Safari, Dinh Cậu hay các bãi biển tuyệt đẹp.
-
-Nếu bạn cần thêm thông tin hoặc muốn đặt phòng, hãy cho mình biết nhé!
+💡 **Gợi ý thêm**: Bạn còn dư 900.000đ, có thể dùng để thưởng thức ẩm thực địa phương hoặc tham gia các hoạt động vui chơi giải trí tại Phú Quốc. Nếu bạn muốn nâng cấp phòng hoặc tìm thêm lựa chọn khác, hãy cho mình biết nhé!
 ```
 
 **✅ Pass**
